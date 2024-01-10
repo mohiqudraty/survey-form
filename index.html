@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Online Survey Form</h1>
+    <p id="description">Thank you for participating in our online survey</p>
+    <form action="" id="survey-form">
+      <!-- name email number  -->
+        <label for="name" id="name-label"
+          >Name<input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Your Name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email<input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter Your Email"
+        /></label>
+        <label for="number" id="number-label"
+          >Number (Optional)<input
+            type="number"
+            name="number"
+            id="number"
+            min="11"
+            max="15"
+            placeholder="Mobile Number"
+        /></label>
+      <!-- What You Know? -->
+        <p>What You Know?</p>
+        <label for="dropdown">
+          <select name="dropdown" id="dropdown">
+            <option value="">(Choose an Option)</option>
+            <option value="front-end-development">Front-End Development</option>
+            <option value="backend-development">Backend Development</option>
+            <option value="full-stack-development">
+              Full Stack Development
+            </option>
+          </select>
+        </label>
+      <!-- role and skills  -->
+        <!-- role  -->
+        <div>
+          <p>What is Your Position?</p>
+          <label for="job"
+            >Job
+            <input type="radio" name="role" id="job" />
+          </label>
+          <label for="student"
+            >Student
+            <input type="radio" name="role" id="student" />
+          </label>
+        </div>
+        <!-- skills  -->
+        <div>
+          <p>Which Technology You Know?</p>
+          <label for="html">
+            <input type="checkbox" value="HTML" name="html" id="html" />
+            HTML
+          </label>
+          <label for="css">
+            <input type="checkbox" value="CSS" name="css" id="css" />
+            CSS
+          </label>
+          <label for="js">
+            <input type="checkbox" value="JavaScript" name="js" id="js" />
+            JavaScript
+          </label>
+          <label for="all">
+            <input type="checkbox" value="All" name="all" id="all" />
+            All
+          </label>
+        </div>
+     
+      <!-- comment  -->
+      <p>Do You Have Any Comment For Us?</p>
+      <label for="comment">
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter Your FeedBack Here"
+        ></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
